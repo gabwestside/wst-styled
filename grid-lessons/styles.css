@@ -3,31 +3,39 @@
   padding: 0;
   box-sizing: border-box;
   background: #7159c1;
-  color: #FFFFFF;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 20vh 70vh 10vh;
+  grid-template-areas:
+    'h h'
+    'm a'
+    'f f';
 }
 
 header {
   background: #ffdc00;
-  height: 100px;
+  grid-area: h;
 }
 
 main {
   background: #55b4b0;
-  height: 100px;
+  grid-area: m;
 }
 
 aside {
   background: #88b04b;
-  height: 100px;
+  grid-area: a;
 }
 
 footer {
   background: #27291f;
-  height: 100px;
+  grid-area: f;
 }
